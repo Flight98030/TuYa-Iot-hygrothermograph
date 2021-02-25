@@ -71,4 +71,4 @@ IIC接口的0.96寸OLED屏。
 #### 工程连接：https://oshwhub.com/Flight666/wu-lian-wang-wen-shi-du-ji       
 #### GitHub：https://github.com/Flight98030/TuYa-Iot-hygrothermograph      
 #### gitee：https://gitee.com/Flight98030/TuYa-Iot-hygrothermograph     
-#### bilibili ：
+#### bilibili ：https://www.bilibili.com/video/BV1UV411e7fw
