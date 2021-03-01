@@ -115,27 +115,27 @@ int main()
 		WifiState = mcu_get_wifi_work_state();
 	
 			
-			if(t%10==0 && WifiState>=WIFI_CONNECTED)			//每100ms读取一次
+			if(t%10==0 /*&& WifiState>=WIFI_CONNECTED*/)			//每100ms读取一次
 				{									  
 //					DHT11_Read_Data(&temperature,&humidity);	//读取温湿度值	
 					sht30_read_temp_humi(&temperature,&humidity);
 					
 					/*显示温湿度*/	
 //					OLED_Clear();
-					OLED_ShowCHinese(0,0,0);//温
-					OLED_ShowCHinese(18,0,1);//湿
-					OLED_ShowCHinese(36,0,2);//度
-					OLED_ShowCHinese(54,0,3);//检
-					OLED_ShowCHinese(72,0,4);//测
+					OLED_ShowCHinese(20,0,0);//温
+					OLED_ShowCHinese(38,0,1);//湿
+					OLED_ShowCHinese(56,0,2);//度
+					OLED_ShowCHinese(74,0,3);//检
+					OLED_ShowCHinese(92,0,4);//测
 	
-					OLED_ShowCHinese(0,3,0);//温
-					OLED_ShowCHinese(18,3,2);//度
-					OLED_ShowString(36,3,":",16);
-					OLED_ShowCHinese(70,3,5);//℃
+					OLED_ShowCHinese(0,2,0);//温
+					OLED_ShowCHinese(18,2,2);//度
+					OLED_ShowString(36,2,":",16);
+					OLED_ShowCHinese(70,2,5);//℃
 	
-					OLED_ShowCHinese(0,5,1);//湿
-					OLED_ShowCHinese(18,5,2);//度
-					OLED_ShowString(36,5,":    %",16); 
+					OLED_ShowCHinese(0,4,1);//湿
+					OLED_ShowCHinese(18,4,2);//度
+					OLED_ShowString(36,4,":    %",16); 
 			
 					humi = (u16)humidity;
 					temp = (u16)temperature;
@@ -143,15 +143,14 @@ int main()
 					UsartPrintf(USART_DEBUG,"Tem:%d\r\n",temp);
 					UsartPrintf(USART_DEBUG,"Hum:%d\r\n",humi);
 				
-					OLED_ShowNum(40,3,temperature,3,16);	//显示温度   		   
-					OLED_ShowNum(40,5,humidity,3,16);		//显示湿度	
+					OLED_ShowNum(40,2,temperature,3,16);	//显示温度   		   
+					OLED_ShowNum(40,4,humidity,3,16);		//显示湿度	
 			
 					temperature = temperature * 10;
 				
 					mcu_dp_value_update(DPID_TEMP_CURRENT,temperature); //VALUE型数据上报;
 					mcu_dp_value_update(DPID_HUMIDITY_VALUE,humidity); //VALUE型数据上报;
 				
-//					OLED_Refresh_Gram();		//更新显示到OLED 	
 
 
 				}
@@ -162,9 +161,9 @@ int main()
 							case SMART_CONFIG_STATE:
 								//Smart 配置状态LED 快闪，led 闪烁请用户完成
 								UsartPrintf(USART_DEBUG, "State: Smart Config\r\n");
-								OLED_Clear();
-								OLED_ShowString(0,0,"WiFi",16);
-								OLED_ShowString(0,3,"Connecting...",16);
+//								OLED_Clear();
+								OLED_ShowString(15,7,"Smart Config",6);
+
 
 									for(LED_time = 0; LED_time < 6; LED_time++)
 										{
@@ -176,6 +175,7 @@ int main()
 							case AP_STATE:
 								//AP 配置状态LED 慢闪，led 闪烁请用户完成
 								UsartPrintf(USART_DEBUG, "State: AP Config\r\n");
+								OLED_ShowString(25,7,"AP Config",6);
 									for(LED_time = 0; LED_time < 6; LED_time++)
 										{	
 											PBout(11) = (1- GPIO_ReadOutputDataBit(GPIOB , GPIO_Pin_11));							
@@ -186,19 +186,24 @@ int main()
 							case WIFI_NOT_CONNECTED:
 								//WIFI 配置完成，正在连接路由器，LED 常暗
 								UsartPrintf(USART_DEBUG, "Connecting Route\r\n");
+								OLED_ShowString(15,7,"Connecting...",6);
 								LED1_OFF;
+								OLED_Clear();
 							break;
 				
 							case WIFI_CONNECTED:
 								//路由器连接成功LED 常亮
 								UsartPrintf(USART_DEBUG, "Connecting Route OK!\r\n");
+								OLED_ShowString(35,7,"Online",6);
 								LED1_ON;
+							
 							break;
 				
 							case WIFI_CONN_CLOUD:
 								LED1_ON;
 							//wifi 已连上云端LED 常亮
 							UsartPrintf(USART_DEBUG, "Connecting Cloud\r\n");
+							OLED_ShowString(35,7,"Online",6);
 							default:break;
 							}
 
@@ -264,6 +269,7 @@ void EXTI4_IRQHandler(void)
 		LED2_ON;
 		UsartPrintf(USART_DEBUG, "Doing Smart Config\r\n");
 		mcu_set_wifi_mode(SMART_CONFIG);//智能配网
+//		mcu_reset_wifi();
 		delay_ms(1000);
 		delay_ms(1000);
 		LED2_OFF;
