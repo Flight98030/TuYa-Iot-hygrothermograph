@@ -30,6 +30,9 @@
 
 #include "wifi.h"
 #include "GPIO.h"
+#include "sys.h"
+#include "rtc.h"
+#include "UART.h"
 
 #ifdef WEATHER_ENABLE
 /**
@@ -38,27 +41,27 @@
  * @note   用户可以自定义需要的参数，注释或者取消注释即可，注意更改
  */
 const char *weather_choose[WEATHER_CHOOSE_CNT] = {
-    "temp",
-    "humidity",
-    "condition",
-    "pm25",
-    /*"pressure",
-    "realFeel",
-    "uvi",
-    "tips",
-    "windDir",
-    "windLevel",
-    "windSpeed",
-    "sunRise",
-    "sunSet",
-    "aqi",
-    "so2 ",
-    "rank",
-    "pm10",
-    "o3",
-    "no2",
-    "co",
-    "conditionNum",*/
+    "temp",					//大气温度
+    "humidity",				//大气湿度
+    "condition",			//天气状况，晴、雨、雪等
+//    "pm25",				//PM2.5颗粒
+//    "pressure",			//大气气压
+//    "realFeel",			//体感温度
+//    "uvi",				//紫外线指数
+//    "tips",				//
+//    "windDir",			//风向
+//    "windLevel",			//风级
+    "windSpeed",			//风速
+//    "sunRise",			//日出
+//    "sunSet",				//日落
+//    "aqi",				//空气质量指数
+//    "so2 ",				//二氧化硫浓度
+//    "rank",				//详细AQI实况及全国排名
+//    "pm10",				//PM10（可吸入颗粒物）
+//    "o3",					//臭氧浓度
+//    "no2",				//二氧化氮浓度
+//    "co",					//一氧化碳浓度
+//    "conditionNum",		//
 };
 #endif
 
@@ -560,7 +563,7 @@ unsigned char mcu_firm_update_handle(const unsigned char value[],unsigned long p
  */
 void mcu_get_greentime(unsigned char time[])
 {
-    #error "请自行完成相关代码,并删除该行"
+    //#error "请自行完成相关代码,并删除该行"
     /*
     time[0] 为是否获取时间成功标志，为 0 表示失败，为 1表示成功
     time[1] 为年份，0x00 表示 2000 年
@@ -572,9 +575,12 @@ void mcu_get_greentime(unsigned char time[])
     */
     if(time[0] == 1) {
         //正确接收到wifi模块返回的格林数据
+        UsartPrintf(USART_DEBUG,"Get Green Time from Net OK\r\n");
+        RTC_Set(time[1]+2000,time[2],time[3],time[4],time[5],time[6]);  //设置时间 
         
     }else {
         //获取格林时间出错,有可能是当前wifi模块未联网
+        UsartPrintf(USART_DEBUG,"Get Green Time from Net Error!!!\r\n");
     }
 }
 #endif
@@ -588,7 +594,7 @@ void mcu_get_greentime(unsigned char time[])
  */
 void mcu_write_rtctime(unsigned char time[])
 {
-    #error "请自行完成RTC时钟写入代码,并删除该行"
+    // #error "请自行完成RTC时钟写入代码,并删除该行"
     /*
     Time[0] 为是否获取时间成功标志，为 0 表示失败，为 1表示成功
     Time[1] 为年份，0x00 表示 2000 年
@@ -601,9 +607,11 @@ void mcu_write_rtctime(unsigned char time[])
    */
     if(time[0] == 1) {
         //正确接收到wifi模块返回的本地时钟数据
-     
+        UsartPrintf(USART_DEBUG,"Get Time from Net OK\r\n");
+        RTC_Set(time[1]+2000,time[2],time[3],time[4],time[5],time[6]);  //设置时间   
     }else {
         //获取本地时钟数据出错,有可能是当前wifi模块未联网
+        UsartPrintf(USART_DEBUG,"Get Time from Net Error!!!\r\n");
     }
 }
 #endif
@@ -775,26 +783,58 @@ void get_wifi_status(unsigned char result)
     switch(result) {
         case 0:
             //wifi工作状态1
+            //Smart 配置状态LED 快闪，led 闪烁请用户完成
+			UsartPrintf(USART1, "State: Smart Config\r\n");
+			OLED_ShowString(15,7,"Smart Config",6);
+
+			for(LED_time = 0; LED_time < 6; LED_time++)
+				{
+					PBout(11) = (1- GPIO_ReadOutputDataBit(GPIOB , GPIO_Pin_11));
+					delay_ms(100);
+				}
         break;
     
         case 1:
             //wifi工作状态2
+            //AP 配置状态LED 慢闪，led 闪烁请用户完成
+		    //UsartPrintf(USART_DEBUG, "State: AP Config\r\n");
+			//OLED_ShowString(25,7,"AP Config",6);
+			//for(LED_time = 0; LED_time < 6; LED_time++)
+			// 	{	
+			// 		PBout(11) = (1- GPIO_ReadOutputDataBit(GPIOB , GPIO_Pin_11));							
+			// 		delay_ms(600);
+			// 	}
         break;
         
         case 2:
             //wifi工作状态3
+            //WIFI 配置完成，正在连接路由器，LED 常暗
+			UsartPrintf(USART1, "Connecting Route\r\n");
+			OLED_ShowString(15,7,"Connecting...",6);
+			LED1_OFF;
+			OLED_Clear();
+			delay_ms(400);
         break;
         
         case 3:
             //wifi工作状态4
+            //路由器连接成功LED 常亮
+			UsartPrintf(USART1, "Connecting Route OK!\r\n");
+			OLED_ShowString(35,7,"Online",6);
+			LED1_ON;
         break;
         
         case 4:
             //wifi工作状态5
+			//wifi 已连上云端LED 常亮
+            LED1_ON;
+			UsartPrintf(USART1, "Connecting Cloud\r\n");
+			OLED_ShowString(35,7,"Online",6);
         break;
         
         case 5:
             //wifi工作状态6
+            UsartPrintf(USART1, "Low Power mode\r\n");
         break;
       
         case 6:

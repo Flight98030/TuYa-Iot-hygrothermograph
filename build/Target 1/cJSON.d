@@ -1,0 +1,9 @@
+.\build\Target 1\cJSON.o: .\NET\cJSON\cJSON.c
+.\build\Target 1\cJSON.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\string.h
+.\build\Target 1\cJSON.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdio.h
+.\build\Target 1\cJSON.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\math.h
+.\build\Target 1\cJSON.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdlib.h
+.\build\Target 1\cJSON.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\float.h
+.\build\Target 1\cJSON.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\limits.h
+.\build\Target 1\cJSON.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\ctype.h
+.\build\Target 1\cJSON.o: .\NET\cJSON\cJSON.h

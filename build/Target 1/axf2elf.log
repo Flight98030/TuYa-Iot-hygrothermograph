@@ -1,0 +1,4 @@
+objcopy.exe --update-section ER_IROM1="f:\TUYAIOT\TuYa-Iot-hygrothermograph_V2\build\Target 1\TuYa-Iot-hygrothermograph_V2.bin" "f:\TUYAIOT\TuYa-Iot-hygrothermograph_V2\build\Target 1\TuYa-Iot-hygrothermograph_V2.axf" "f:\TUYAIOT\TuYa-Iot-hygrothermograph_V2\build\Target 1\TuYa-Iot-hygrothermograph_V2.elf"
+
+objcopy.exe: f:\TUYAIOT\TuYa-Iot-hygrothermograph_V2\build\Target 1\TuYa-Iot-hygrothermograph_V2.elf: warning: allocated section `RW_IRAM1' not in segment
+

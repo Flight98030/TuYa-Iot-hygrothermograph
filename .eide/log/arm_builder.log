@@ -1,0 +1,609 @@
+[2021-03-05 09:05:59]	[done]
+	build successfully !
+
+[2021-03-05 09:07:26]	[done]
+	build successfully !
+
+[2021-03-05 09:12:46]	[done]
+	build successfully !
+
+[2021-03-05 09:13:59]	[done]
+	build successfully !
+
+[2021-03-05 09:14:04]	[done]
+	build successfully !
+
+[2021-03-05 09:14:55]	[done]
+	build successfully !
+
+[2021-03-05 09:15:57]	[done]
+	build successfully !
+
+[2021-03-05 09:16:36]	[done]
+	build successfully !
+
+[2021-03-05 09:18:05]	[done]
+	build successfully !
+
+[2021-03-05 09:20:21]	[done]
+	build successfully !
+
+[2021-03-05 09:22:18]	[done]
+	build successfully !
+
+[2021-03-05 09:23:26]	[done]
+	build successfully !
+
+[2021-03-05 09:27:02]	[done]
+	build successfully !
+
+[2021-03-05 09:33:40]	[done]
+	build successfully !
+
+[2021-03-05 09:34:54]	[done]
+	build successfully !
+
+[2021-03-05 09:35:27]	[done]
+	build successfully !
+
+[2021-03-05 09:35:54]	[done]
+	build successfully !
+
+[2021-03-05 09:37:22]	[done]
+	build successfully !
+
+[2021-03-05 09:39:34]	[done]
+	build successfully !
+
+[2021-03-05 09:40:31]	[done]
+	build successfully !
+
+[2021-03-05 09:41:35]	[done]
+	build successfully !
+
+[2021-03-05 09:43:30]	[done]
+	build successfully !
+
+[2021-03-05 09:44:41]	[done]
+	build successfully !
+
+[2021-03-05 09:47:13]	[done]
+	build successfully !
+
+[2021-03-05 09:47:41]	[done]
+	build successfully !
+
+[2021-03-05 09:49:52]	[done]
+	build successfully !
+
+[2021-03-05 09:52:13]	[done]
+	build successfully !
+
+[2021-03-05 09:53:47]	[done]
+	build successfully !
+
+[2021-03-05 09:59:49]	[done]
+	build successfully !
+
+[2021-03-05 10:07:25]	[done]
+	build successfully !
+
+[2021-03-05 16:51:44]	[done]
+	build successfully !
+
+[2021-03-05 16:51:53]	[done]
+	build successfully !
+
+[2021-03-05 19:05:28]	[done]
+	build successfully !
+
+[2021-03-05 19:25:23]	[done]
+	build successfully !
+
+[2021-03-05 20:13:15]	[done]
+	build successfully !
+
+[2021-03-05 20:16:31]	compilation failed at : "f:\TUYAIOT\TuYa-Iot-hygrothermograph_V2\USER\TY_SDK\protocol.c", exit code: 1
+   在 unify_builder.Program.Main(String[] args)
+
+[2021-03-05 20:23:12]	[done]
+	build successfully !
+
+[2021-03-05 20:23:59]	[done]
+	build successfully !
+
+[2021-03-05 20:36:19]	[done]
+	build successfully !
+
+[2021-03-05 20:37:30]	[done]
+	build successfully !
+
+[2021-03-05 20:39:11]	[done]
+	build successfully !
+
+[2021-03-05 20:39:53]	[done]
+	build successfully !
+
+[2021-03-05 20:40:00]	[done]
+	build successfully !
+
+[2021-03-05 20:40:39]	[done]
+	build successfully !
+
+[2021-03-05 20:40:56]	[done]
+	build successfully !
+
+[2021-03-05 20:41:40]	[done]
+	build successfully !
+
+[2021-03-05 20:42:11]	[done]
+	build successfully !
+
+[2021-03-05 20:43:05]	[done]
+	build successfully !
+
+[2021-03-05 20:43:40]	[done]
+	build successfully !
+
+[2021-03-05 20:50:11]	[done]
+	build successfully !
+
+[2021-03-05 20:50:48]	[done]
+	build successfully !
+
+[2021-03-05 20:51:40]	[done]
+	build successfully !
+
+[2021-03-05 20:52:46]	[done]
+	build successfully !
+
+[2021-03-05 20:59:16]	[done]
+	build successfully !
+
+[2021-03-05 21:00:54]	compilation failed at : "f:\TUYAIOT\TuYa-Iot-hygrothermograph_V2\USER\DRIVE\OLED\oled_gui.c", exit code: 1
+   在 unify_builder.Program.Main(String[] args)
+
+[2021-03-05 22:56:07]	[done]
+	build successfully !
+
+[2021-03-05 23:16:40]	compilation failed at : "f:\TUYAIOT\TuYa-Iot-hygrothermograph_V2\USER\DRIVE\OLED\oled_gui.c", exit code: 1
+   在 unify_builder.Program.Main(String[] args)
+
+[2021-03-05 23:17:49]	[done]
+	build successfully !
+
+[2021-03-05 23:21:52]	[done]
+	build successfully !
+
+[2021-03-05 23:22:19]	[done]
+	build successfully !
+
+[2021-03-05 23:23:31]	[done]
+	build successfully !
+
+[2021-03-05 23:24:15]	[done]
+	build successfully !
+
+[2021-03-05 23:25:33]	[done]
+	build successfully !
+
+[2021-03-05 23:26:12]	[done]
+	build successfully !
+
+[2021-03-05 23:27:06]	[done]
+	build successfully !
+
+[2021-03-05 23:28:04]	[done]
+	build successfully !
+
+[2021-03-05 23:29:14]	[done]
+	build successfully !
+
+[2021-03-05 23:31:18]	[done]
+	build successfully !
+
+[2021-03-05 23:37:24]	[done]
+	build successfully !
+
+[2021-03-05 23:39:33]	[done]
+	build successfully !
+
+[2021-03-05 23:40:33]	[done]
+	build successfully !
+
+[2021-03-05 23:41:45]	[done]
+	build successfully !
+
+[2021-03-05 23:42:48]	[done]
+	build successfully !
+
+[2021-03-05 23:43:54]	[done]
+	build successfully !
+
+[2021-03-05 23:45:44]	[done]
+	build successfully !
+
+[2021-03-05 23:47:46]	[done]
+	build successfully !
+
+[2021-03-05 23:50:34]	[done]
+	build successfully !
+
+[2021-03-05 23:53:36]	[done]
+	build successfully !
+
+[2021-03-05 23:54:41]	[done]
+	build successfully !
+
+[2021-03-05 23:55:42]	[done]
+	build successfully !
+
+[2021-03-06 00:09:32]	[done]
+	build successfully !
+
+[2021-03-06 00:10:07]	[done]
+	build successfully !
+
+[2021-03-06 11:26:19]	[done]
+	build successfully !
+
+[2021-03-06 11:26:52]	[done]
+	build successfully !
+
+[2021-03-06 11:27:57]	[done]
+	build successfully !
+
+[2021-03-06 11:28:04]	[done]
+	build successfully !
+
+[2021-03-06 11:28:47]	[done]
+	build successfully !
+
+[2021-03-06 11:29:14]	[done]
+	build successfully !
+
+[2021-03-06 11:29:49]	[done]
+	build successfully !
+
+[2021-03-06 11:30:17]	[done]
+	build successfully !
+
+[2021-03-06 11:30:46]	[done]
+	build successfully !
+
+[2021-03-06 11:31:27]	[done]
+	build successfully !
+
+[2021-03-06 11:32:03]	[done]
+	build successfully !
+
+[2021-03-06 11:32:45]	[done]
+	build successfully !
+
+[2021-03-06 12:47:09]	[done]
+	build successfully !
+
+[2021-03-06 12:50:02]	[done]
+	build successfully !
+
+[2021-03-06 12:51:09]	[done]
+	build successfully !
+
+[2021-03-06 12:51:19]	[done]
+	build successfully !
+
+[2021-03-06 12:52:29]	[done]
+	build successfully !
+
+[2021-03-06 12:54:06]	[done]
+	build successfully !
+
+[2021-03-06 12:55:03]	[done]
+	build successfully !
+
+[2021-03-06 12:56:16]	[done]
+	build successfully !
+
+[2021-03-06 12:57:14]	[done]
+	build successfully !
+
+[2021-03-06 12:58:25]	[done]
+	build successfully !
+
+[2021-03-06 13:01:07]	[done]
+	build successfully !
+
+[2021-03-06 13:05:31]	[done]
+	build successfully !
+
+[2021-03-06 13:06:39]	[done]
+	build successfully !
+
+[2021-03-06 13:07:43]	[done]
+	build successfully !
+
+[2021-03-06 13:08:59]	[done]
+	build successfully !
+
+[2021-03-06 13:10:14]	[done]
+	build successfully !
+
+[2021-03-06 13:27:11]	compilation failed at : "f:\TUYAIOT\TuYa-Iot-hygrothermograph_V2\USER\DRIVE\OLED\oled_gui.c", exit code: 1
+   在 unify_builder.Program.Main(String[] args)
+
+[2021-03-06 13:28:58]	compilation failed at : "f:\TUYAIOT\TuYa-Iot-hygrothermograph_V2\USER\DRIVE\OLED\oled_gui.c", exit code: 1
+   在 unify_builder.Program.Main(String[] args)
+
+[2021-03-06 13:31:09]	link failed !, exit code: 1
+   在 unify_builder.Program.Main(String[] args)
+
+[2021-03-06 13:32:12]	link failed !, exit code: 1
+   在 unify_builder.Program.Main(String[] args)
+
+[2021-03-06 13:32:52]	[done]
+	build successfully !
+
+[2021-03-06 13:33:40]	[done]
+	build successfully !
+
+[2021-03-06 13:34:49]	[done]
+	build successfully !
+
+[2021-03-06 13:34:58]	[done]
+	build successfully !
+
+[2021-03-06 13:37:27]	[done]
+	build successfully !
+
+[2021-03-06 19:11:43]	[done]
+	build successfully !
+
+[2021-03-06 19:12:37]	[done]
+	build successfully !
+
+[2021-03-06 19:13:12]	[done]
+	build successfully !
+
+[2021-03-06 19:13:53]	[done]
+	build successfully !
+
+[2021-03-06 19:16:10]	[done]
+	build successfully !
+
+[2021-03-06 19:17:04]	[done]
+	build successfully !
+
+[2021-03-06 19:18:41]	[done]
+	build successfully !
+
+[2021-03-06 19:27:03]	[done]
+	build successfully !
+
+[2021-03-06 19:29:11]	[done]
+	build successfully !
+
+[2021-03-06 19:53:29]	[done]
+	build successfully !
+
+[2021-03-06 19:54:22]	[done]
+	build successfully !
+
+[2021-03-06 19:55:22]	[done]
+	build successfully !
+
+[2021-03-06 19:58:32]	[done]
+	build successfully !
+
+[2021-03-06 20:00:08]	[done]
+	build successfully !
+
+[2021-03-06 20:06:09]	[done]
+	build successfully !
+
+[2021-03-06 20:06:51]	[done]
+	build successfully !
+
+[2021-03-06 20:07:56]	[done]
+	build successfully !
+
+[2021-03-06 20:08:50]	[done]
+	build successfully !
+
+[2021-03-06 20:09:33]	[done]
+	build successfully !
+
+[2021-03-06 20:10:45]	[done]
+	build successfully !
+
+[2021-03-06 20:10:56]	[done]
+	build successfully !
+
+[2021-03-06 20:11:39]	[done]
+	build successfully !
+
+[2021-03-06 20:12:35]	[done]
+	build successfully !
+
+[2021-03-06 20:13:55]	[done]
+	build successfully !
+
+[2021-03-06 20:21:44]	[done]
+	build successfully !
+
+[2021-03-06 20:22:30]	[done]
+	build successfully !
+
+[2021-03-06 20:24:17]	[done]
+	build successfully !
+
+[2021-03-06 20:25:25]	[done]
+	build successfully !
+
+[2021-03-06 20:26:06]	[done]
+	build successfully !
+
+[2021-03-06 20:27:13]	[done]
+	build successfully !
+
+[2021-03-06 20:27:59]	[done]
+	build successfully !
+
+[2021-03-06 20:29:08]	[done]
+	build successfully !
+
+[2021-03-06 20:35:44]	[done]
+	build successfully !
+
+[2021-03-06 20:35:54]	[done]
+	build successfully !
+
+[2021-03-06 20:35:58]	[done]
+	build successfully !
+
+[2021-03-06 20:36:29]	[done]
+	build successfully !
+
+[2021-03-06 20:37:28]	[done]
+	build successfully !
+
+[2021-03-06 20:38:06]	[done]
+	build successfully !
+
+[2021-03-06 20:39:16]	[done]
+	build successfully !
+
+[2021-03-06 20:40:33]	[done]
+	build successfully !
+
+[2021-03-06 20:41:43]	[done]
+	build successfully !
+
+[2021-03-06 20:42:29]	[done]
+	build successfully !
+
+[2021-03-06 20:44:27]	[done]
+	build successfully !
+
+[2021-03-06 20:45:40]	[done]
+	build successfully !
+
+[2021-03-06 20:47:38]	[done]
+	build successfully !
+
+[2021-03-06 20:49:24]	[done]
+	build successfully !
+
+[2021-03-06 20:50:07]	[done]
+	build successfully !
+
+[2021-03-06 20:51:00]	[done]
+	build successfully !
+
+[2021-03-06 20:51:43]	[done]
+	build successfully !
+
+[2021-03-06 20:52:22]	[done]
+	build successfully !
+
+[2021-03-06 20:53:46]	[done]
+	build successfully !
+
+[2021-03-06 20:55:13]	[done]
+	build successfully !
+
+[2021-03-06 20:55:46]	[done]
+	build successfully !
+
+[2021-03-06 20:56:39]	[done]
+	build successfully !
+
+[2021-03-06 21:02:23]	[done]
+	build successfully !
+
+[2021-03-06 21:03:14]	[done]
+	build successfully !
+
+[2021-03-06 21:05:17]	[done]
+	build successfully !
+
+[2021-03-06 21:06:19]	[done]
+	build successfully !
+
+[2021-03-06 21:07:37]	[done]
+	build successfully !
+
+[2021-03-06 21:08:24]	[done]
+	build successfully !
+
+[2021-03-06 21:09:46]	[done]
+	build successfully !
+
+[2021-03-06 21:12:02]	[done]
+	build successfully !
+
+[2021-03-06 21:12:09]	[done]
+	build successfully !
+
+[2021-03-06 21:13:17]	[done]
+	build successfully !
+
+[2021-03-06 21:13:47]	[done]
+	build successfully !
+
+[2021-03-06 21:22:30]	[done]
+	build successfully !
+
+[2021-03-06 21:22:58]	[done]
+	build successfully !
+
+[2021-03-06 21:24:27]	[done]
+	build successfully !
+
+[2021-03-06 21:25:26]	[done]
+	build successfully !
+
+[2021-03-06 21:27:56]	[done]
+	build successfully !
+
+[2021-03-06 21:34:24]	[done]
+	build successfully !
+
+[2021-03-06 21:36:18]	[done]
+	build successfully !
+
+[2021-03-06 21:36:28]	[done]
+	build successfully !
+
+[2021-03-06 21:55:52]	[done]
+	build successfully !
+
+[2021-03-06 21:57:43]	[done]
+	build successfully !
+
+[2021-03-06 21:58:59]	[done]
+	build successfully !
+
+[2021-03-06 21:59:58]	[done]
+	build successfully !
+
+[2021-03-06 22:00:56]	[done]
+	build successfully !
+
+[2021-03-06 22:01:27]	[done]
+	build successfully !
+
+[2021-03-06 22:36:08]	[done]
+	build successfully !
+
+[2021-03-06 22:40:31]	[done]
+	build successfully !
+
+[2021-03-06 23:06:17]	[done]
+	build successfully !
+
+[2021-03-06 23:07:01]	[done]
+	build successfully !
+
+[2021-03-06 23:11:14]	[done]
+	build successfully !
+

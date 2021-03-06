@@ -1,0 +1,42 @@
+{
+    "configurations": [
+        {
+            "name": "win32",
+            "includePath": [
+                "${default}",
+                ".\\LIB",
+                ".\\LIB\\inc",
+                ".\\USER",
+                ".\\USER\\HARDWARE\\TIM",
+                ".\\USER\\HARDWARE\\GPIO",
+                ".\\USER\\HARDWARE\\USART",
+                ".\\USER\\DRIVE\\TIM_ISR",
+                ".\\USER\\DRIVE\\OLED",
+                ".\\USER\\DRIVE\\DHT11",
+                ".\\USER\\sys",
+                ".\\NET\\cJSON",
+                ".\\USER\\DRIVE\\SHT30",
+                ".\\USER\\TY_SDK",
+                ".\\.eide\\deps",
+                ".\\USER\\HARDWARE\\RTC",
+                "C:\\Keil_v5\\ARM\\ARMCC\\include",
+                "C:\\Keil_v5\\ARM\\ARMCC\\include\\rw"
+            ],
+            "defines": [
+                "${default}",
+                "STM32F10X_MD",
+                "USE_STDPERIPH_DRIVER",
+                "__VSCODE_CPPTOOL"
+            ],
+            "intelliSenseMode": "${default}",
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": "${default}"
+            },
+            "forcedInclude": [
+                "c:\\Users\\ASUS\\.vscode\\extensions\\cl.eide-2.3.2\\bin\\include\\internal_headers\\armcc_intr.h"
+            ]
+        }
+    ],
+    "version": 4
+}

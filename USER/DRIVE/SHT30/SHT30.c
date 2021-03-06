@@ -237,14 +237,10 @@ u8 sht30_read_temp_humi(float *temperature,float *humidity)
 	
 	if((Temperature>=-20)&&(Temperature<=125)&&(Humidity>=0)&&(Humidity<=100))//过滤错误数据
 	{
-//		humiture[0]=Temperature;
-//		humiture[2]=Humidity;
-
 		*temperature = Temperature;
 		*humidity    = Humidity;
-//		sprintf(humiture_buff1,"%6.2f*C %6.2f%%",Temperature,Humidity);//111.01*C 100.01%（保留2位小数）
 	}
-//	printf("温度：%s\n",humiture_buff1);
+
 	hum=0;
 	tem=0;
 

@@ -13,6 +13,7 @@ void Usart_SendString(USART_TypeDef *USARTx, unsigned char *str, unsigned short 
 
 void UsartPrintf(USART_TypeDef *USARTx, char *fmt,...);
 
+void UART1_SendByte(unsigned char data);
 void USART2_SendByte(unsigned char data);
 
 #endif

@@ -1,22 +1,22 @@
-//////////////////////////////////////////////////////////////////////////////////	 
-//±¾³ÌÐòÖ»¹©Ñ§Ï°Ê¹ÓÃ£¬Î´¾­×÷ÕßÐí¿É£¬²»µÃÓÃÓÚÆäËüÈÎºÎÓÃÍ¾
-//ÖÐ¾°Ô°µç×Ó
-//µêÆÌµØÖ·£ºhttp://shop73023976.taobao.com/?spm=2013.1.0.0.M4PqC2
+ï»¿//////////////////////////////////////////////////////////////////////////////////	 
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö»ï¿½ï¿½Ñ§Ï°Ê¹ï¿½Ã£ï¿½Î´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îºï¿½ï¿½ï¿½Í¾
+//ï¿½Ð¾ï¿½Ô°ï¿½ï¿½ï¿½ï¿½
+//ï¿½ï¿½ï¿½Ìµï¿½Ö·ï¿½ï¿½http://shop73023976.taobao.com/?spm=2013.1.0.0.M4PqC2
 //
-//  ÎÄ ¼þ Ãû   : main.c
-//  °æ ±¾ ºÅ   : v2.0
-//  ×÷    Õß   : Evk123
-//  Éú³ÉÈÕÆÚ   : 2014-0101
-//  ×î½üÐÞ¸Ä   : 
-//  ¹¦ÄÜÃèÊö   : 0.69´çOLED ½Ó¿ÚÑÝÊ¾Àý³Ì(STM32F103ZEÏµÁÐIIC)
-//              ËµÃ÷: 
+//  ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½   : main.c
+//  ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½   : v2.0
+//  ï¿½ï¿½    ï¿½ï¿½   : Evk123
+//  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½   : 2014-0101
+//  ï¿½ï¿½ï¿½ï¿½ï¿½Þ¸ï¿½   : 
+//  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½   : 0.69ï¿½ï¿½OLED ï¿½Ó¿ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½(STM32F103ZEÏµï¿½ï¿½IIC)
+//              Ëµï¿½ï¿½: 
 //              ----------------------------------------------------------------
-//              GND   µçÔ´µØ
-//              VCC   ½Ó5V»ò3.3vµçÔ´
-//              SCL   ½ÓPD6£¨SCL£©
-//              SDA   ½ÓPD7£¨SDA£©            
+//              GND   ï¿½ï¿½Ô´ï¿½ï¿½
+//              VCC   ï¿½ï¿½5Vï¿½ï¿½3.3vï¿½ï¿½Ô´
+//              SCL   ï¿½ï¿½PD6ï¿½ï¿½SCLï¿½ï¿½
+//              SDA   ï¿½ï¿½PD7ï¿½ï¿½SDAï¿½ï¿½            
 //              ----------------------------------------------------------------
-//Copyright(C) ÖÐ¾°Ô°µç×Ó2014/3/16
+//Copyright(C) ï¿½Ð¾ï¿½Ô°ï¿½ï¿½ï¿½ï¿½2014/3/16
 //All rights reserved
 //////////////////////////////////////////////////////////////////////////////////
 #ifndef __OLED_H
@@ -32,7 +32,7 @@
 #define	Brightness	0xFF 
 #define X_WIDTH 	128
 #define Y_WIDTH 	64	    						  
-//-----------------OLED IIC¶Ë¿Ú¶¨Òå----------------  					   
+//-----------------OLED IICï¿½Ë¿Ú¶ï¿½ï¿½ï¿½----------------  					   
 
 #define OLED_SCLK_Clr() GPIO_ResetBits(GPIOB,GPIO_Pin_5)//SCL
 #define OLED_SCLK_Set() GPIO_SetBits(GPIOB,GPIO_Pin_5)
@@ -41,11 +41,11 @@
 #define OLED_SDIN_Set() GPIO_SetBits(GPIOB,GPIO_Pin_4)
 
  		     
-#define OLED_CMD  0	//Ð´ÃüÁî
-#define OLED_DATA 1	//Ð´Êý¾Ý
+#define OLED_CMD  0	//Ð´ï¿½ï¿½ï¿½ï¿½
+#define OLED_DATA 1	//Ð´ï¿½ï¿½ï¿½ï¿½
 
 
-//OLED¿ØÖÆÓÃº¯Êý
+//OLEDï¿½ï¿½ï¿½ï¿½ï¿½Ãºï¿½ï¿½ï¿½
 void OLED_WR_Byte(unsigned dat,unsigned cmd);  
 void OLED_Display_On(void);
 void OLED_Display_Off(void);	   							   		    
@@ -55,6 +55,7 @@ void OLED_DrawPoint(u8 x,u8 y,u8 t);
 void OLED_Fill(u8 x1,u8 y1,u8 x2,u8 y2,u8 dot);
 void OLED_ShowChar(u8 x,u8 y,u8 chr,u8 Char_Size);
 void OLED_ShowNum(u8 x,u8 y,u32 num,u8 len,u8 size);
+void OLED_ShowNumber0(u8 x,u8 y,u32 num,u8 len,u8 size2);
 void OLED_ShowString(u8 x,u8 y, u8 *p,u8 Char_Size);	 
 void OLED_Set_Pos(unsigned char x, unsigned char y);
 void OLED_ShowCHinese(u8 x,u8 y,u8 no);
@@ -70,6 +71,8 @@ void Write_IIC_Data(unsigned char IIC_Data);
 void Write_IIC_Byte(unsigned char IIC_Byte);
 
 void IIC_Wait_Ack(void);
+
+
 #endif  
 	 
 

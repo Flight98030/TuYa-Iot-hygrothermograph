@@ -207,6 +207,11 @@ void UsartPrintf(USART_TypeDef *USARTx, char *fmt,...)
 
 }
 
+void UART1_SendByte(unsigned char data)
+{
+	while((USART1->SR & USART_FLAG_TXE) != USART_FLAG_TXE);
+		USART1->DR = data;	
+}
 
 //串口单字节发送函数
 void USART2_SendByte(unsigned char data)

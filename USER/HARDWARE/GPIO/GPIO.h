@@ -16,8 +16,8 @@
 #define	ALL_LED_OFF			    GPIO_SetBits(GPIOX, GPIO_PINX)
 #define ALL_LED_ON				GPIO_ResetBits(GPIOX, GPIO_PINX)
 
-#define KEY1										GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_4)
-#define KEY2										GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_5)
+#define KEY1					GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_4)
+#define KEY2					GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_5)
 
 
 #define KEY1_PRES 	1	//KEY0°´ÏÂ

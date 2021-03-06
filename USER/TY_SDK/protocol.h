@@ -36,9 +36,9 @@
 #define MCU_VER "1.0.0"         //用户的软件版本,用于MCU固件升级,MCU升级版本需修改
 
 /*  模块工作方式选择,只能三选一,推荐使用防误触模式  */
-#define CONFIG_MODE     CONFIG_MODE_DEFAULT             //默认工作模式
+//#define CONFIG_MODE     CONFIG_MODE_DEFAULT             //默认工作模式
 //#define CONFIG_MODE     CONFIG_MODE_LOWPOWER            //安全模式 (低功耗配网方式)
-//#define CONFIG_MODE     CONFIG_MODE_SPECIAL             //防误触模式(特殊配网方式)
+#define CONFIG_MODE     CONFIG_MODE_SPECIAL             //防误触模式(特殊配网方式)
 
 /*  设置低功耗配网方式和特殊配网方式的配网模式打开时间,该宏处于注释状态将按三分钟处理,可以支持的设置数据范围: 3~10 分钟  */
 //#define CONFIG_MODE_DELAY_TIME    10         //配网模式打开时间 单位:分钟
@@ -78,8 +78,8 @@ MCU可调用mcu_api.c文件内的mcu_firm_update_query()函数获取当前MCU固
                     如当前使用MCU的RAM不够,可修改为24
 ******************************************************************************/
 #ifndef SUPPORT_MCU_FIRM_UPDATE
-#define WIFI_UART_RECV_BUF_LMT          16              //串口数据接收缓存区大小,如MCU的RAM不够,可缩小
-#define WIFI_DATA_PROCESS_LMT           24              //串口数据处理缓存区大小,根据用户DP数据大小量定,必须大于24
+#define WIFI_UART_RECV_BUF_LMT          128              //串口数据接收缓存区大小,如MCU的RAM不够,可缩小
+#define WIFI_DATA_PROCESS_LMT           128              //串口数据处理缓存区大小,根据用户DP数据大小量定,必须大于24
 #else
 #define WIFI_UART_RECV_BUF_LMT          128             //串口数据接收缓存区大小,如MCU的RAM不够,可缩小
 
@@ -113,7 +113,7 @@ MCU自处理:
 mcu_write_rtctime内部有#err提示,完成函数后请删除该#err
 mcu在wifi模块正确联网后可调用mcu_get_system_time()函数发起校时功能
 ******************************************************************************/
-//#define         SUPPORT_MCU_RTC_CHECK                //开启校时功能
+#define         SUPPORT_MCU_RTC_CHECK                //开启校时功能
 
 /******************************************************************************
                       6:MCU是否需要支持wifi功能测试
@@ -184,7 +184,7 @@ mcu_get_mac内部有#err提示,完成函数后请删除该#err
 mcu_get_greentime内部有#err提示,完成函数后请删除该#err
 mcu在wifi模块正确联网后可调用mcu_get_green_time()函数发起校时功能
 ******************************************************************************/
-//#define         SUPPORT_GREEN_TIME                //开启格林时间功能
+// #define         SUPPORT_GREEN_TIME                //开启格林时间功能
 
 /******************************************************************************
                       14:MCU是否需要开启同步状态上报功能
